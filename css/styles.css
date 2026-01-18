@@ -11637,8 +11637,8 @@ html {
 
 /* Change the Experience button hover color */
 .btn-primary:hover {
-    background-color: #32a0b6 !important; /* Changes to your Teal on hover */
-    border-color: #32a0b6 !important;
+    background-color: #1f1f1f !important;
+    border-color: #1f1f1f !important;
     color: white !important;
     transform: translateY(-2px); /* Optional: adds a slight lift effect */
     transition: all 0.3s ease;
@@ -11648,4 +11648,32 @@ html {
 .btn-primary:focus, .btn-primary:active {
     background-color: #7d658d !important; /* Stays Violet when clicked */
     box-shadow: 0 0 0 0.25rem rgba(125, 101, 141, 0.5) !important;
+}
+/* Background Image Layer */
+.header-bg-custom {
+    position: relative;
+    overflow: hidden;
+    background-color: white; /* Base color under the photo */
+}
+
+.header-bg-custom::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Replace 'assets/your-photo.jpg' with your actual file path later */
+    background-image: url('../assets/placeholder-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* High transparency (0.1 to 0.2 is best for faint looks) */
+    z-index: 0; /* Keeps it behind the text */
+}
+
+/* Ensure content stays on top of the background */
+.header-bg-custom .container {
+    position: relative;
+    z-index: 1;
 }
