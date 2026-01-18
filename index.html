@@ -122,13 +122,17 @@
     var map = L.map('map').setView([12.8797, 121.7740], 6);
 
     // Add the OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
     }).addTo(map);
 
     // Optional: Add a marker for your location
     L.marker([14.5995, 120.9842]).addTo(map)
         .bindPopup('Manila, Philippines')
         .openPopup();
+    var project1 = L.marker([13.818396, 123.868106]).addTo(map);
+        project1.bindPopup("<b>Fieldwork, 2024</b><br>Assessed the wonderful islands of Caramoan for the Karst Subsidence Hazards Assessment of MGB.");
 </script>
 </html>
