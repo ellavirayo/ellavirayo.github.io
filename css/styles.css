@@ -11634,3 +11634,18 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Change the Experience button hover color */
+.btn-primary:hover {
+    background-color: #32a0b6 !important; /* Changes to your Teal on hover */
+    border-color: #32a0b6 !important;
+    color: white !important;
+    transform: translateY(-2px); /* Optional: adds a slight lift effect */
+    transition: all 0.3s ease;
+}
+
+/* Fix for the focus state (when you click it) */
+.btn-primary:focus, .btn-primary:active {
+    background-color: #7d658d !important; /* Stays Violet when clicked */
+    box-shadow: 0 0 0 0.25rem rgba(125, 101, 141, 0.5) !important;
+}
