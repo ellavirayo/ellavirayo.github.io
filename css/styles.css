@@ -11555,14 +11555,17 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: #64a5b1;
-  background: linear-gradient(135deg, #1e30f3 0%, #7d658d 100%);
+    background: #7d658d;
+    background: linear-gradient(315deg, #7d658d 0%, #1e30f3 100%);
 }
 
+/* Custom Text Gradient */
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #64a5b1 0%, #7d658d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(315deg, #7d658d 0%, #1e30f3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Required for the clip to work correctly */
 }
 
 .rounded-4 {
@@ -11581,8 +11584,8 @@ html {
 /* This container defines the "box" the photo sits in */
 .profile-container {
     position: relative;
-    height: 20rem; 
-    width: 20rem;  
+    height: 30rem; 
+    width: 30rem;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11597,7 +11600,7 @@ html {
     border-radius: 50%; /* This keeps it circular */
     
     /* 1. The Thin White Border */
-    border: 3px solid #ffffff; 
+    border: 5px solid #ffffff; 
 
     /* 2. The Subtle Floating Shadow */
     /* Horizontal offset | Vertical offset | Blur | Spread | Color */
