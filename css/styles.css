@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #7d658d;
+  --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #e21e80;
@@ -35,18 +35,18 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #7d658d;
-  --bs-secondary: #e21e80;
+  --bs-secondary: #64a5b1;
   --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-info: #32a0b6;
+  --bs-warning: #e4c150;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: 125, 101, 141;
+  --bs-secondary-rgb: 100, 165, 177;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
+  --bs-info-rgb: 50, 160, 182;
+  --bs-warning-rgb: 228, 193, 80;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
@@ -514,6 +514,7 @@ progress {
 }
 
 .display-3 {
+  white-space: nowrap;
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
   line-height: 1.2;
@@ -11605,4 +11606,16 @@ html {
     /* 2. The Subtle Floating Shadow */
     /* Horizontal offset | Vertical offset | Blur | Spread | Color */
     box-shadow: 0 10px 20px 2px rgba(125, 101, 141, 0.3);
+}
+/* Ensure the profile image is visible and sits above the background */
+.profile {
+    background-color: transparent !important; /* Removes the white void */
+}
+
+.profile-img {
+    position: relative;
+    z-index: 10;
+    display: block !important;
+    max-width: 100%;
+    height: auto;
 }
