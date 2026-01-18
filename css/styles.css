@@ -11619,3 +11619,18 @@ html {
     max-width: 100%;
     height: auto;
 }
+/* Keep the header items side-by-side on larger screens */
+@media (min-width: 992px) {
+    header .row.gx-5 {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important; /* Forces them to stay in one row */
+    }
+}
+
+/* Ensure the image doesn't get too huge and push things away */
+.profile-container {
+    max-width: 350px; /* Slightly smaller to fit better */
+    margin-left: auto;
+    margin-right: auto;
+}
