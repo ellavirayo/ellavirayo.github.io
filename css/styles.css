@@ -11668,7 +11668,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; /* High transparency (0.1 to 0.2 is best for faint looks) */
+    opacity: 0.15; /* High transparency (0.1 to 0.2 is best for faint looks) */
     z-index: 0; /* Keeps it behind the text */
 }
 
