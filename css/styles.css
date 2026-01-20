@@ -2965,8 +2965,8 @@ textarea.form-control-lg {
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #212529;
-  --bs-btn-border-color: #212529;
+  --bs-btn-bg: #2b2b2b;
+  --bs-btn-border-color: #2b2b2b;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #424649;
   --bs-btn-hover-border-color: #373b3e;
@@ -2978,6 +2978,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
+  background-color: #2b2b2b;     /* The specific dark shade in the prototype */
+  border-radius: 8px;            /* Gives it that slightly rounded look */
+  padding: 12px 30px;            /* Makes the buttons chunkier like the image */
+  border: none;                  /* Removes the default thin border */
 }
 
 .btn-outline-primary {
@@ -11676,4 +11680,15 @@ html {
 .header-bg-custom .container {
     position: relative;
     z-index: 1;
+}
+/* About Me: Creates the vertical line between the title and the text */
+.border-start {
+    border-left: 2px solid #6d6d8e !important; /* Matches the text color */
+    height: 100%;
+}
+
+/* Ensures the 'About Me' text is large and spaced correctly */
+.display-3 {
+    line-height: 1.1;
+    color: #6d6d8e; /* The dusty purple/blue from Figma */
 }
