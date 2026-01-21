@@ -11692,3 +11692,69 @@ html {
     line-height: 1.1;
     color: #6d6d8e; /* The dusty purple/blue from Figma */
 }
+
+
+/* Navigation fix for Fixed-Top */
+body {
+    padding-top: 80px; 
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+/* The Vertical Line - Now Dashed */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 0; /* Set width to 0 since we are using a border instead */
+    border-left: 2px dashed #e0e0e0; /* This creates the dashed effect */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* The Date Pill on the left */
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    padding-right: 50px; /* Adjusted to give the line breathing room */
+}
+
+.date-label {
+    background-color: #f0f8f9; /* Very light version of your teal */
+    color: #64a5b1;
+    border: 1px solid #64a5b1;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+/* The Dot on the line */
+.timeline-dot {
+    position: absolute;
+    left: 114px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 3px solid #7d658d;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding-left: 40px;
+    flex: 1;
+}

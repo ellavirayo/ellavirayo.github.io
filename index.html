@@ -3,52 +3,48 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Ella's Portfolio - Geologist & GIS Specialist" />
+        <meta name="author" content="Ella Joyce Virayo" />
         <title>Ella's Portfolio</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ella Joyce Virayo</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Header-->
-            <header class="py-5 header-bg-custom">
+            <!--Header-->
+            <header class="py-5 header-bg-custom" data-aos="fade-up" data-aos-duration="1500">
                 <div class="container px-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
                             <div class="d-flex justify-content-center">
                                 <div class="profile-container">
                                     <img class="profile-img" src="assets/ejv_profile.jpg" alt="Profile Picture" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-5 offset-lg-1" data-aos="fade-up" data-aos-delay="400">
                             <div class="text-center text-lg-start mt-5 mt-lg-0">
                                 <div class="fs-3 fw-light text-muted">Welcome to my portfolio! I am</div>
                                 <h1 class="display-3 fw-bolder mb-2">
@@ -67,44 +63,84 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
+            <!--About me-->
             <section class="bg-light py-5 overflow-hidden">
                 <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-md-3 text-md-end">
+                    <div class="row gx-5 align-items-center justify-content-start">
+                        <div class="col-md-2 text-md-end" data-aos="fade-right">
                             <h2 class="display-5 fw-bolder">
                                 <span class="text-gradient d-inline">About Me</span>
                             </h2>
                         </div>
-                        <div class="col-md-6 border-start border-4 border-primary ps-md-5">
-                            <h4 class="fw-bold">I am Ella from Rizal, Philippines.</h4>
+                        <div class="col-md-7 border-start border-4 border-primary ps-md-5" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="fw-bold" style="color: #363636;">I am Ella from Rizal, Philippines.</h4>
                             <p class="text-muted mb-0">
                                 I specialize in hazard mapping using geographic information systems (GIS) software, particularly ArcGIS, QGIS, ILWIS, Global Mapper, and Leapfrog. I also use Python (Pandas, GeoPandas, Matplotlib, Seaborn) to make maps and visualize data.
                             </p>
                         </div>
-
-                        <div class="col-md-3 d-none d-md-block">
+                        <div class="col-md-3 d-none d-md-block" data-aos="fade-left" data-aos-delay="500">
                             <img src="assets/globe.png" alt="Globe" class="img-fluid" style="max-height: 300px;">
                         </div>
                     </div>
                 </div>
             </section>
+            <!--My life in a map-->
             <section class="py-5">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My life in a map</span></h2>
-                        <p class="lead fw-light mb-4">Click on the pins to see my adventures!</p>
-                        <p class="text-muted">I currently work in the Geospatial Analytics and Technology Solutions (GATES) Program of the Department of Science and Technology as a Senior GIS Specialist. Before that, I worked as a geologist for the geohazards sector!</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div id="map" style="height: 400px; border-radius: 1rem; border: 1px solid #dee2e6;"></div>
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6" data-aos="zoom-in">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My life in a map</span></h2>
+                            <p class="lead fw-light mb-4">Click on the pins to see my adventures!</p>
+                            <p class="text-muted">I currently work in the Geospatial Analytics and Technology Solutions (GATES) Program of the Department of Science and Technology as a Senior GIS Specialist.</p>
+                        </div>
+                        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div id="map" style="height: 400px; border-radius: 1rem; border: 1px solid #dee2e6;"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <!--Experiences-->
+            <section id="experience" class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Experience</span></h2>
+                    </div>
+                    
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="timeline">
+                                
+                                <div class="timeline-item" data-aos="fade-left">
+                                    <div class="timeline-date mt-1">
+                                        <span class="date-label">JAN 2026</span>
+                                    </div>
+                                    <div class="timeline-dot mt-2"></div>
+                                    <div class="timeline-content">
+                                        <h4 class="fw-bolder mb-1" style="color: #363636;">Senior GIS Specialist</h4>
+                                        <div class="fw-bold mb-2" style="color: #64a5b1;">DOST-GATES Program</div>
+                                        <p class="text-muted">Leading geospatial analytics and technology solutions for hazard mitigation.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                                    <div class="timeline-date mt-1">
+                                        <span class="date-label">FEB 2024</span>
+                                    </div>
+                                    <div class="timeline-dot mt-2"></div>
+                                    <div class="timeline-content">
+                                        <h4 class="fw-bolder mb-1" style="color: #363636;">Science Research Specialist</h4>
+                                        <div class="fw-bold mb-2" style="color: #64a5b1;">DENR - MGB</div>
+                                        <p class="text-muted">Specialized in Karst Subsidence Hazard Mapping and field geohazard assessments.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <!-- Footer-->
+
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
@@ -119,38 +155,34 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize Animations
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+
+            // Initialize Map
+            var map = L.map('map').setView([12.8797, 121.7740], 6);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            // Add Markers
+            L.marker([9.158642, 123.493384]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed San Juan, Siquijor.");
+            L.marker([13.818396, 123.868106]).addTo(map).bindPopup("<b>Fieldwork, 2024</b><br>Assessed the islands of Caramoan.");
+            L.marker([11.282342, 125.067682]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed Basey, Samar.");
+            L.marker([6.119036, 125.183224]).addTo(map).bindPopup("<b>Skill-sharing, 2025</b><br>General Santos City.");
+            L.marker([12.339366, 123.654572]).addTo(map).bindPopup("<b>Fieldwork, 2022</b><br> Masbate City.");
+            L.marker([15.200590, 120.743011]).addTo(map).bindPopup("<b>Mount Arayat, Pampanga</b><br>Thesis area for LAHARZ modelling!");
+            L.marker([7.088533, 125.616449]).addTo(map).bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop in Davao.");
+        </script>
     </body>
-    <script>
-    // Initialize the map centered on the Philippines (or wherever you prefer)
-    var map = L.map('map').setView([12.8797, 121.7740], 6);
-
-    // Add the OpenStreetMap tiles
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
-    }).addTo(map);
-
-    // Optional: Add a marker for your location
-    L.marker([9.158642, 123.493384]).addTo(map)
-        .bindPopup("<b>Fieldwork, 2025</b><br>Assessed San Juan, Siquijor for the Karst Subsidence Hazards Program of the MGB.")
-    L.marker([13.818396, 123.868106]).addTo(map)
-        .bindPopup("<b>Fieldwork, 2024</b><br>Assessed the islands of Caramoan for the Karst Subsidence Hazards Program of the MGB.")
-    L.marker([11.282342, 125.067682]).addTo(map)
-        .bindPopup("<b>Fieldwork, 2025</b><br>Assessed Basey, Samar for the Karst Subsidence Hazards Program of the MGB.")
-    L.marker([11.282342, 125.067682]).addTo(map)
-        .bindPopup("<b>Fieldwork, 2024</b><br>Assessed Minglanilla, Cebu for the National Geohazards Assessment and Mapping Program of the MGB.")
-    L.marker([6.119036, 125.183224]).addTo(map)
-        .bindPopup("<b>Skill-sharing, 2025</b><br>Visited General Santos City to teach local government representatives about hydro-meteorological hazards.")
-    L.marker([12.339366, 123.654572]).addTo(map)
-        .bindPopup("<b>Fieldwork, 2022</b><br> Mapped the geology of Masbate City for my Field Geology class!")
-    L.marker([15.200590, 120.743011]).addTo(map)
-        .bindPopup("<b>Mount Arayat, Pampanga</b><br>This potentially active volcano is my thesis area for LAHARZ modelling!")
-    L.marker([7.088533, 125.616449]).addTo(map)
-        .bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop for DENR regional offices about the SPLIT Project operating procedures.")
-</script>
 </html>
