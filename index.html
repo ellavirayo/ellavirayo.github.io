@@ -94,7 +94,7 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My life in a map</span></h2>
-                        <p class="lead fw-light mb-4">Hover around to see the details!</p>
+                        <p class="lead fw-light mb-4">Click on the pins to see my adventures!</p>
                         <p class="text-muted">I currently work in the Geospatial Analytics and Technology Solutions (GATES) Program of the Department of Science and Technology as a Senior GIS Specialist. Before that, I worked as a geologist for the geohazards sector!</p>
                     </div>
                     <div class="col-lg-6">
@@ -136,10 +136,21 @@
     }).addTo(map);
 
     // Optional: Add a marker for your location
-    L.marker([14.5995, 120.9842]).addTo(map)
-        .bindPopup('Manila, Philippines')
-        .openPopup();
-    var project1 = L.marker([13.818396, 123.868106]).addTo(map);
-        project1.bindPopup("<b>Fieldwork, 2024</b><br>Assessed the wonderful islands of Caramoan for the Karst Subsidence Hazards Assessment of MGB.");
+    L.marker([9.158642, 123.493384]).addTo(map)
+        .bindPopup("<b>Fieldwork, 2025</b><br>Assessed San Juan, Siquijor for the Karst Subsidence Hazards Program of the MGB.")
+    L.marker([13.818396, 123.868106]).addTo(map)
+        .bindPopup("<b>Fieldwork, 2024</b><br>Assessed the islands of Caramoan for the Karst Subsidence Hazards Program of the MGB.")
+    L.marker([11.282342, 125.067682]).addTo(map)
+        .bindPopup("<b>Fieldwork, 2025</b><br>Assessed Basey, Samar for the Karst Subsidence Hazards Program of the MGB.")
+    L.marker([11.282342, 125.067682]).addTo(map)
+        .bindPopup("<b>Fieldwork, 2024</b><br>Assessed Minglanilla, Cebu for the National Geohazards Assessment and Mapping Program of the MGB.")
+    L.marker([6.119036, 125.183224]).addTo(map)
+        .bindPopup("<b>Skill-sharing, 2025</b><br>Visited General Santos City to teach local government representatives about hydro-meteorological hazards.")
+    L.marker([12.339366, 123.654572]).addTo(map)
+        .bindPopup("<b>Fieldwork, 2022</b><br> Mapped the geology of Masbate City for my Field Geology class!")
+    L.marker([15.200590, 120.743011]).addTo(map)
+        .bindPopup("<b>Mount Arayat, Pampanga</b><br>This potentially active volcano is my thesis area for LAHARZ modelling!")
+    L.marker([7.088533, 125.616449]).addTo(map)
+        .bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop for DENR regional offices about the SPLIT Project operating procedures.")
 </script>
 </html>
