@@ -2978,10 +2978,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
-  background-color: #363636b;     /* The specific dark shade in the prototype */
-  border-radius: 8px;            /* Gives it that slightly rounded look */
-  padding: 12px 30px;            /* Makes the buttons chunkier like the image */
-  border: none;                  /* Removes the default thin border */
 }
 
 .btn-outline-primary {

@@ -25,7 +25,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
@@ -34,7 +34,7 @@
                 </div>
             </nav>
             <!--Header-->
-            <header class="py-5 header-bg-custom" data-aos="fade-up" data-aos-duration="1500">
+            <header id="home" class="py-5 header-bg-custom" data-aos="fade-up" data-aos-duration="1500">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
@@ -56,7 +56,7 @@
                                 <p class="fs-4 text-muted mb-5">Feel free to browse through my mapping projects and affiliations!</p>
                                 <div class="d-flex justify-content-center justify-content-lg-start gap-3">
                                     <a class="btn btn-dark btn-lg px-5 py-3" href="projects.html">Projects</a>
-                                    <a class="btn btn-dark btn-lg px-5 py-3" href="resume.html">Experience</a>
+                                    <a class="btn btn-dark btn-lg px-5 py-3" href="#experience">Experience</a>
                                 </div>
                             </div>
                         </div>
@@ -176,13 +176,14 @@
             }).addTo(map);
 
             // Add Markers
-            L.marker([9.158642, 123.493384]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed San Juan, Siquijor.");
-            L.marker([13.818396, 123.868106]).addTo(map).bindPopup("<b>Fieldwork, 2024</b><br>Assessed the islands of Caramoan.");
-            L.marker([11.282342, 125.067682]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed Basey, Samar.");
-            L.marker([6.119036, 125.183224]).addTo(map).bindPopup("<b>Skill-sharing, 2025</b><br>General Santos City.");
-            L.marker([12.339366, 123.654572]).addTo(map).bindPopup("<b>Fieldwork, 2022</b><br> Masbate City.");
+            L.marker([9.158642, 123.493384]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed San Juan, Siquijor for the Karst Subsidence Hazards Program of the MGB.");
+            L.marker([13.818396, 123.868106]).addTo(map).bindPopup("<b>Fieldwork, 2024</b><br>Assessed the islands of Caramoan for the Karst Subsidence Hazards Program of the MGB.");
+            L.marker([11.282342, 125.067682]).addTo(map).bindPopup("<b>Fieldwork, 2025</b><br>Assessed Basey, Samar for the Karst Subsidence Hazards Program of the MGB.");
+            L.marker([6.119036, 125.183224]).addTo(map).bindPopup("<b>Skill-sharing, 2025</b><br>Trained local government representatives in General Santos City about hydro-meteorological hazards.");
+            L.marker([12.339366, 123.654572]).addTo(map).bindPopup("<b>Fieldwork, 2022</b><br> Mapped the geology of Masbate City for my Field Geology class!");
             L.marker([15.200590, 120.743011]).addTo(map).bindPopup("<b>Mount Arayat, Pampanga</b><br>Thesis area for LAHARZ modelling!");
-            L.marker([7.088533, 125.616449]).addTo(map).bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop in Davao.");
+            L.marker([7.088533, 125.616449]).addTo(map).bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop in Davao for DENR regional offices about the SPLIT Project.");
+            L.marker([11.282342, 125.067682]).addTo(map).bindPopup("<b>Fieldwork, 2024</b><br>Assessed Minglanilla, Cebu for the National Geohazards Assessment and Mapping Program of the MGB.");
         </script>
     </body>
 </html>
