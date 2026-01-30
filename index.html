@@ -14,6 +14,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
         
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>
@@ -167,29 +168,47 @@
                     <div class="text-center mb-5" data-aos="fade-up">
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Map Gallery</span></h1>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8" data-aos="fade-up">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                    <div class="row gx-4 justify-content-center">
+                                <div class="col-lg-10 col-xl-9">
+                                    <div class="row gx-4">
+                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="card border-0 bg-transparent h-100">
+                                                <a href="assets/lightning_dens.gif" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="assets/lightning_thumb.png" class="card-img-top object-fit-cover" alt="Map 1">
+                                                    </div>
+                                                </a>
+                                                <div class="card-body px-0 text-center">
+                                                    <p class="small fw-bold text-muted mb-0">Mean Monthly Lightning Density Map of the Philippines (2010-2023)</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0" data-aos="fade-up">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+
+                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="card border-0 bg-transparent h-100">
+                                                <a href="assets/sanjuan.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="assets/sanjuan.png" class="card-img-top object-fit-cover" alt="Map 2">
+                                                    </div>
+                                                </a>
+                                                <div class="card-body px-0 text-center">
+                                                    <p class="small fw-bold text-muted mb-0">LAHARZ modeled runout vs. actual lahars in Arayat</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+
+                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="card border-0 bg-transparent h-100">
+                                                <a href="assets/masbate_locmap.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="assets/masbate_locmap_thumb.png" class="card-img-top object-fit-cover" alt="Map 3">
+                                                    </div>
+                                                </a>
+                                                <div class="card-body px-0 text-center">
+                                                    <p class="small fw-bold text-muted mb-0">Location Map of Masbate Philippines</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -217,6 +236,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+        <script> const lightbox = GLightbox({ selector: '.glightbox' }); </script>
         <script>
             // Initialize Animations
             AOS.init({

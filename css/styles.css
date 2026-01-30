@@ -11754,3 +11754,46 @@ body {
     padding-left: 40px;
     flex: 1;
 }
+
+/* Image Hover Effect */
+.glightbox img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.glightbox:hover img {
+    transform: scale(1.05); /* Subtle zoom when hovering */
+}
+
+/* Ensure images fill the square properly */
+.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Thumbnail Frame with White Border */
+.thumbnail-frame {
+    display: block;
+    padding: 8px; /* This creates the white space inside the border */
+    background-color: #ffffff; /* The white frame color */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.thumbnail-frame:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.thumbnail-frame img {
+    border-radius: 4px; /* Rounds the image slightly inside the frame */
+    object-fit: cover;
+}
+
+/* Ensure the captions have a bit of space from the frame */
+.card-body p {
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
