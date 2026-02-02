@@ -9,7 +9,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -35,212 +35,254 @@
                 </div>
             </nav>
             <!--Header-->
-            <header id="home" class="py-5 header-bg-custom" data-aos="fade-up" data-aos-duration="1500">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                            <div class="d-flex justify-content-center">
-                                <div class="profile-container">
-                                    <img class="profile-img" src="assets/ejv_profile.jpg" alt="Profile Picture" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1" data-aos="fade-up" data-aos-delay="400">
-                            <div class="text-center text-lg-start mt-5 mt-lg-0">
-                                <div class="fs-3 fw-light text-muted">Welcome to my portfolio! I am</div>
-                                <h1 class="display-3 fw-bolder mb-2">
-                                    <span class="text-gradient d-inline">Ella Joyce Virayo</span>
-                                </h1>
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                    <div class="text-uppercase">Geologist &middot; GIS Specialist</div>
-                                </div>
-                                <p class="fs-4 text-muted mb-5">Feel free to browse through my mapping projects and affiliations!</p>
-                                <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                                    <a class="btn btn-dark btn-lg px-5 py-3" href="#gallery">My  Maps</a>
-                                    <a class="btn btn-dark btn-lg px-5 py-3" href="#experience">Experience</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!--About me-->
-            <section class="bg-light py-5 overflow-hidden">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-start">
-                        <div class="col-md-2 text-md-end" data-aos="fade-right">
-                            <h2 class="display-5 fw-bolder">
-                                <span class="text-gradient d-inline">About Me</span>
-                            </h2>
-                        </div>
-                        <div class="col-md-7 border-start border-4 border-primary ps-md-5" data-aos="fade-up" data-aos-delay="300">
-                            <h4 class="fw-bold" style="color: #363636;">I am Ella from Rizal, Philippines.</h4>
-                            <p class="text-muted mb-0">
-                                I specialize in hazard mapping using geographic information systems (GIS) software, particularly ArcGIS, QGIS, ILWIS, Global Mapper, and Leapfrog. I also use Python (Pandas, GeoPandas, Matplotlib, Seaborn) to make maps and visualize data.
-                            </p>
-                        </div>
-                        <div class="col-md-3 d-none d-md-block" data-aos="fade-left" data-aos-delay="500">
-                            <img src="assets/globe.png" alt="Globe" class="img-fluid floating-globe" style="max-height: 300px;">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--My life in a map-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6" data-aos="zoom-in">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My life in a map</span></h2>
-                            <p class="lead fw-light mb-4">Click on the pins to see my adventures!</p>
-                            <p class="text-muted">I currently work in the Geospatial Analytics and Technology Solutions (GATES) Program of the Department of Science and Technology as a Senior GIS Specialist.</p>
-                        </div>
-                        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-                            <div id="map" style="height: 400px; border-radius: 1rem; border: 1px solid #dee2e6;"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Experiences-->
-            <section id="experience" class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="text-center mb-5" data-aos="fade-up">
-                        <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">Experience</span></h2>
-                        <a class="btn btn-primary px-4 py-3" href="assets/VIRAYO_EllaJoyce_CV.pdf">
-                             <div class="d-inline-block bi bi-download me-2"></div> Download CV
-                        </a>
-                    </div>
-                    
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-8">
-                            <div class="timeline">
-                                
-                                <div class="timeline-item" data-aos="fade-left">
-                                    <div class="timeline-date mt-1">
-                                        <span class="date-label">SEP 2025</span>
-                                    </div>
-                                    <div class="timeline-dot mt-2"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="fw-bolder mb-1" style="color: #363636;">Senior GIS Specialist</h4>
-                                        <div class="fw-bold mb-2" style="color: #64a5b1;">DOST-GATES Program, Project 3</div>
-                                        <p class="text-muted">Developed python-based GIS functions, models, and spatial analysis for the disaster risk reduction and climate change adaptation (DRR-CCA) Central Platform of the Philippine Institute of Volcanology and Seismology</p>
+            <main class="container">
+                <div class="main-wrapper" data-aos="fade-up">
+                    <header id="home" class="py-5 px-4" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="container px-0">
+                            <div class="row gx-4 align-items-center justify-content-center">
+                                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="profile-container">
+                                            <img class="profile-img" src="assets/ejv_profile.jpg" alt="Profile Picture" />
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                                    <div class="timeline-date mt-1">
-                                        <span class="date-label">FEB 2024</span>
-                                    </div>
-                                    <div class="timeline-dot mt-2"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="fw-bolder mb-1" style="color: #363636;">Science Research Specialist</h4>
-                                        <div class="fw-bold mb-2" style="color: #64a5b1;">DENR - Mines and Geosciences Bureau</div>
-                                        <p class="text-muted">Specialized in karst subsidence susceptibility modelling using ILWIS and ArcGIS Pro; conducted geohazard assessments and provided technical inputs during Pre-Disaster Risk Analysis (PDRA) meetings of the National Disaster Risk Reduction and Management Council (NDRRMC) </p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                                    <div class="timeline-date mt-1">
-                                        <span class="date-label">OCT 2023</span>
-                                    </div>
-                                    <div class="timeline-dot mt-2"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="fw-bolder mb-1" style="color: #363636;">GIS Specialist</h4>
-                                        <div class="fw-bold mb-2" style="color: #64a5b1;">DENR - Forest Management Bureau, SPLIT Project </div>
-                                        <p class="text-muted">Performed vector analysis and topology checks on land ownership parcels of various Philippine provinces to ensure adherence to forest land laws </p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                                    <div class="timeline-date mt-1">
-                                        <span class="date-label">FEB 2021</span>
-                                    </div>
-                                    <div class="timeline-dot mt-2"></div>
-                                    <div class="timeline-content">
-                                        <h4 class="fw-bolder mb-1" style="color: #363636;">Undergraduate Research Assistant</h4>
-                                        <div class="fw-bold mb-2" style="color: #64a5b1;">Volcano-Tectonics Laboratory, National Institute of Geological Sciences </div>
-                                        <p class="text-muted"> Led a training on LAHARZ modeling to the hazard assessment team of University of the Philippines Resilience Institute (UP RI) - Nationwide Operational Assessment of Hazards (NOAH); produced epicenter maps </p>
+                                <div class="col-lg-6 offset-lg-0" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="text-center text-lg-start mt-5 mt-lg-0">
+                                        <div class="fs-3 fw-light text-muted">Welcome to my portfolio! I am</div>
+                                        <h1 class="display-3 fw-bolder mb-2">
+                                            <span class="text-primary d-inline">Ella Joyce Virayo</span>
+                                        </h1>
+                                        <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                            <div class="text-uppercase">Geologist &middot; GIS Specialist</div>
+                                        </div>
+                                        <p class="fs-4 text-muted mb-3">Feel free to browse through my mapping projects and affiliations!</p>
+                                        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#gallery">My  Maps</a>
+                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#experience">Experience</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section id="gallery" class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5" data-aos="fade-up">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Map Gallery</span></h1>
-                    </div>
-                    <div id="gallery-loader">
-                        <div class="orbit-system">
-                            <div class="planet"></div>
-                            <div class="satellite-orbit"></div>
+                    </header>
+                    <!--About me-->
+                    <section class="py-5 px-7 overflow-hidden" style="background-color:#fff;">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center justify-content-center">
+                                <div class="col-md-2 text-md-end" data-aos="fade-right">
+                                    <h2 class="display-5 fw-bolder">
+                                        <span class="text-gradient d-inline">About Me</span>
+                                    </h2>
+                                </div>
+                                <div class="col-md-5 border-start border-4 border-primary ps-md-5" data-aos="fade-up" data-aos-delay="300">
+                                    <h4 class="fw-bold" style="color: #363636;">I am Ella from Rizal, Philippines.</h4>
+                                    <p class="text-muted mb-0">
+                                        I specialize in hazard mapping using geographic information systems (GIS) software, particularly ArcGIS, QGIS, ILWIS, Global Mapper, and Leapfrog. I also use Python (Pandas, GeoPandas, Matplotlib, Seaborn) to make maps and visualize data.
+                                    </p>
+                                </div>
+                                <div class="col-md-3 d-none d-md-block" data-aos="fade-left" data-aos-delay="500">
+                                    <img src="assets/globe.png" alt="Globe" class="img-fluid floating-globe" style="max-height: 250px;">
+                                </div>
+                            </div>
                         </div>
-                        <div class="loading-text">Loading map gallery...</div>
-                    </div>
-                    <div id="actual-gallery" style="display: none;">
-                        <div class="row gx-4 justify-content-center">
-                            <div class="col-lg-10 col-xl-9">
-                                <div class="row gx-4">
-                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                                            <div class="card border-0 bg-transparent h-100">
-                                                <a href="assets/lightning_dens.gif" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                    <div class="ratio ratio-1x1">
-                                                        <img src="assets/lightning_thumb.png" class="card-img-top object-fit-cover" alt="Map 1">
-                                                    </div>
-                                                </a>
-                                                <div class="card-body px-0 text-center">
-                                                    <p class="small fw-bold text-muted mb-0">Mean Monthly Lightning Density Map of the Philippines (2010-2023)</p>
-                                                </div>
+                    </section>
+                    <!--Experiences-->
+                    <section id="experience" class="bg-light py-5">
+                        <div class="container px-5">
+                            <div class="text-center mb-5" data-aos="fade-up">
+                                <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">Experience</span></h2>
+                                <a class="btn btn-primary px-4 py-3" href="assets/VIRAYO_EllaJoyce_CV.pdf">
+                                    <div class="d-inline-block bi bi-download me-2"></div> Download CV
+                                </a>
+                            </div>
+                            
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-10 col-xl-8">
+                                    <div class="timeline">
+                                        
+                                        <div class="timeline-item" data-aos="fade-left">
+                                            <div class="timeline-date mt-1">
+                                                <span class="date-label">SEP 2025</span>
+                                            </div>
+                                            <div class="timeline-dot mt-2"></div>
+                                            <div class="timeline-content">
+                                                <h4 class="fw-bolder mb-1" style="color: #363636;">Senior GIS Specialist</h4>
+                                                <div class="fw-bold mb-2" style="color: #64a5b1;">DOST-GATES Program, Project 3</div>
+                                                <p class="text-muted">Developed python-based GIS functions, models, and spatial analysis for the disaster risk reduction and climate change adaptation (DRR-CCA) Central Platform of the Philippine Institute of Volcanology and Seismology</p>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                            <div class="card border-0 bg-transparent h-100">
-                                                <a href="assets/sanjuan.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                    <div class="ratio ratio-1x1">
-                                                        <img src="assets/sanjuan.png" class="card-img-top object-fit-cover" alt="Map 2">
-                                                    </div>
-                                                </a>
-                                                <div class="card-body px-0 text-center">
-                                                    <p class="small fw-bold text-muted mb-0">LAHARZ modeled runout vs. actual lahars in Arayat</p>
-                                                </div>
+                                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                                            <div class="timeline-date mt-1">
+                                                <span class="date-label">FEB 2024</span>
+                                            </div>
+                                            <div class="timeline-dot mt-2"></div>
+                                            <div class="timeline-content">
+                                                <h4 class="fw-bolder mb-1" style="color: #363636;">Science Research Specialist</h4>
+                                                <div class="fw-bold mb-2" style="color: #64a5b1;">DENR - Mines and Geosciences Bureau</div>
+                                                <p class="text-muted">Specialized in karst subsidence susceptibility modelling using ILWIS and ArcGIS Pro; conducted geohazard assessments and provided technical inputs during Pre-Disaster Risk Analysis (PDRA) meetings of the National Disaster Risk Reduction and Management Council (NDRRMC) </p>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                                            <div class="card border-0 bg-transparent h-100">
-                                                <a href="assets/masbate_locmap.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                    <div class="ratio ratio-1x1">
-                                                        <img src="assets/masbate_locmap_thumb.png" class="card-img-top object-fit-cover" alt="Map 3">
-                                                    </div>
-                                                </a>
-                                                <div class="card-body px-0 text-center">
-                                                    <p class="small fw-bold text-muted mb-0">Location Map of Masbate Province</p>
-                                                </div>
+                                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                                            <div class="timeline-date mt-1">
+                                                <span class="date-label">OCT 2023</span>
+                                            </div>
+                                            <div class="timeline-dot mt-2"></div>
+                                            <div class="timeline-content">
+                                                <h4 class="fw-bolder mb-1" style="color: #363636;">GIS Specialist</h4>
+                                                <div class="fw-bold mb-2" style="color: #64a5b1;">DENR - Forest Management Bureau, SPLIT Project </div>
+                                                <p class="text-muted">Performed vector analysis and topology checks on land ownership parcels of various Philippine provinces to ensure adherence to forest land laws </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                                            <div class="timeline-date mt-1">
+                                                <span class="date-label">FEB 2021</span>
+                                            </div>
+                                            <div class="timeline-dot mt-2"></div>
+                                            <div class="timeline-content">
+                                                <h4 class="fw-bolder mb-1" style="color: #363636;">Undergraduate Research Assistant</h4>
+                                                <div class="fw-bold mb-2" style="color: #64a5b1;">Volcano-Tectonics Laboratory, National Institute of Geological Sciences </div>
+                                                <p class="text-muted"> Led a training on LAHARZ modeling to the hazard assessment team of University of the Philippines Resilience Institute (UP RI) - Nationwide Operational Assessment of Hazards (NOAH); produced epicenter maps </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+                    </section>
+                    <section id="gallery" class="py-5">
+                        <div class="container px-5 mb-5">
+                            <div class="text-center mb-5" data-aos="fade-up">
+                                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Map Gallery</span></h1>
+                            </div>
+                            <div id="gallery-loader">
+                                <div class="orbit-system">
+                                    <div class="planet"></div>
+                                    <div class="satellite-orbit"></div>
+                                </div>
+                                <div class="loading-text">Loading map gallery...</div>
+                            </div>
+                            <div id="actual-gallery" style="display: none;">
+                                <div class="row gx-4 justify-content-center">
+                                    <div class="col-lg-10 col-xl-9">
+                                        <div class="row gx-4">
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/lightning_dens.gif" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                                    <div class="ratio ratio-1x1">
+                                                                        <img src="assets/lightning_dens.gif" class="card-img-top object-fit-cover" alt="Lightning Density Map">
+                                                                    </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">Mean Monthly Lightning Density Map of the Philippines (2010-2023)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Ella Joyce Virayo</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/sanjuan.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                            <div class="ratio ratio-1x1">
+                                                                <img src="assets/sanjuan_thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
+                                                            </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">LAHARZ modeled runout vs. actual lahars in Arayat</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/masbate_locmap.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                            <div class="ratio ratio-1x1">
+                                                                <img src="assets/masbate_locmap_thumb.png" class="card-img-top object-fit-cover" alt="Map 3">
+                                                            </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">Location Map of Masbate Province</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/arayat_map.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                            <div class="ratio ratio-1x1">
+                                                                <img src="assets/arayat_thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
+                                                            </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">Location Map of Mount Arayat, Philippines</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/project_poster.pdf" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                            <div class="ratio ratio-1x1">
+                                                                <img src="assets/poster_thumb.gif" class="card-img-top object-fit-cover" alt="Map 2">
+                                                            </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">Leapfrog Geo Modeling of Wadati-Benioff Zone using Earthquake Hypocenters</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="card border-0 bg-transparent h-100">
+                                                        <a href="assets/map.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
+                                                            <div class="ratio ratio-1x1">
+                                                                <img src="assets/thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
+                                                            </div>
+                                                        </a>
+                                                        <div class="card-body px-0 text-center">
+                                                            <p class="small fw-bold text-muted mb-0">Map 6</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <!--My life in a map-->
+                    <section class="py-5">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center">
+                                <div class="col-lg-6" data-aos="zoom-in">
+                                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">My life in a map</span></h2>
+                                    <p class="lead fw-light mb-4">Click on the pins to see my adventures!</p>
+                                    <p class="text-muted">I currently work in the Geospatial Analytics and Technology Solutions (GATES) Program of the Department of Science and Technology as a Senior GIS Specialist.</p>
+                                </div>
+                                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                                    <div id="map" style="height: 400px; border-radius: 1rem; border: 1px solid #dee2e6;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </main>
+
+                <footer class="bg-white py-4 mt-auto">
+                    <div class="container px-5">
+                        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                            <div class="col-auto"><div class="small m-0">Copyright &copy; Ella Joyce Virayo</div></div>
+                            <div class="col-auto">
+                                <a class="small" href="#!">Privacy</a>
+                                <span class="mx-1">&middot;</span>
+                                <a class="small" href="#!">Terms</a>
+                                <span class="mx-1">&middot;</span>
+                                <a class="small" href="#!">Contact</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </footer>
 
@@ -270,5 +312,34 @@
             L.marker([7.088533, 125.616449]).addTo(map).bindPopup("<b>Skill-sharing, 2023</b><br> Facilitated a workshop in Davao for DENR regional offices about the SPLIT Project.");
             L.marker([11.282342, 125.067682]).addTo(map).bindPopup("<b>Fieldwork, 2024</b><br>Assessed Minglanilla, Cebu for the National Geohazards Assessment and Mapping Program of the MGB.");
         </script>
+
+        <div id="contact-drawer" class="contact-drawer">
+            <div class="drawer-header d-flex justify-content-between align-items-center px-4 py-3">
+                <h5 class="mb-0 fw-bold">Let's Connect!</h5>
+                <button type="button" class="btn-close" id="close-drawer" aria-label="Close"></button>
+            </div>
+            <div class="drawer-body p-4">
+                <div class="row">
+                    <div class="col-md-5 mb-4">
+                        <p class="text-muted small mb-2">EMAIL ADDRESS</p>
+                        <a href="mailto:ella.virayo@email.com" class="text-decoration-none fw-bold" style="color: #64a5b1;">ella.virayo@gmail.com</a>
+                        
+                        <p class="text-muted small mt-4 mb-2">SOCIALS</p>
+                        <div class="d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/ellavirayo/" class="fs-4" style="color: #7d658d;"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ellavirayo" class="fs-4" style="color: #7d658d;"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <form id="contact-form">
+                            <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                            <input type="email" class="form-control mb-2" placeholder="Email Address" required>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Message..."></textarea>
+                            <button type="submit" class="btn w-100 text-white" style="background-color: #64a5b1;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

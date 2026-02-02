@@ -16,5 +16,25 @@ window.addEventListener('load', function() {
             });
             AOS.refresh();
         }
-    }, 0000); // 2000 milliseconds = 2 seconds
+    }, 0); // 2000 milliseconds = 2 seconds
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactDrawer = document.getElementById('contact-drawer');
+    const closeBtn = document.getElementById('close-drawer');
+    const connectLink = document.querySelector('a[href="contact.html"]'); // Target the link
+
+    if (connectLink) {
+        // Prevent going to a new page and show the drawer instead
+        connectLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            contactDrawer.classList.add('active');
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            contactDrawer.classList.remove('active');
+        });
+    }
 });
