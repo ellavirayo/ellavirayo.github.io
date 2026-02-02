@@ -1,7 +1,20 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+window.addEventListener('load', function() {
+    const loader = document.getElementById('gallery-loader');
+    const gallery = document.getElementById('actual-gallery');
+
+    // Add a 2-second delay so the animation is visible
+    setTimeout(function() {
+        if (loader && gallery) {
+            loader.style.display = 'none';
+            gallery.style.display = 'block';
+            
+            // Re-initialize AOS now that the gallery is visible
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+            AOS.refresh();
+        }
+    }, 0000); // 2000 milliseconds = 2 seconds
+});

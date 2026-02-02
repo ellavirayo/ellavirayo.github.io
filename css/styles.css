@@ -79,6 +79,24 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Apply Maven Pro to the entire website */
+* {
+    font-family: 'Maven Pro', sans-serif !important;
+}
+
+/* Optional: Refine font weights for a cleaner look */
+h1, h2, h3, .fw-bolder {
+    font-weight: 700; /* Bold */
+}
+
+body, p, .nav-link {
+    font-weight: 400; /* Regular */
+}
+body {
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased; /* Makes fonts look crisper on Mac/iOS */
+}
+
 *,
 *::before,
 *::after {
@@ -11796,4 +11814,91 @@ body {
 .card-body p {
     margin-top: 10px;
     letter-spacing: 0.5px;
+}
+
+/* The Floating Animation Logic */
+@keyframes floatPlanet {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px); /* Moves up by 15px */
+    }
+    100% {
+        transform: translateY(0px); /* Returns to start */
+    }
+}
+
+/* Apply this class to your globe image */
+.floating-globe {
+    animation: floatPlanet 3s ease-in-out infinite;
+    /* Optional: adds a soft shadow that grows/shrinks slightly */
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+/* Gallery Loader Container */
+#gallery-loader {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* The Orbit System */
+.orbit-system {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/* The Central Planet (Earth/Globe) */
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #64a5b1; /* Your Teal Color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset -5px -5px 0px rgba(0,0,0,0.1);
+}
+
+/* The Satellite Path */
+.satellite-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: orbit-rotate 2s linear infinite;
+}
+
+/* The Satellite */
+.satellite-orbit:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #7d658d; /* Your Purple Color */
+    border-radius: 3px; /* Slightly square like a satellite */
+    transform: translateX(-50%);
+}
+
+@keyframes orbit-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loading-text {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #64a5b1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
