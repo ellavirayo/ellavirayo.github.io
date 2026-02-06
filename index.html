@@ -18,22 +18,27 @@
         
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>
-    <body class="d-flex flex-column h-100">
+    <body id= "top" class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ella Joyce Virayo</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <nav class="side-nav d-none d-lg-block shadow">
+            <div class="d-flex flex-column justify-content-center h-100 p-3">
+                <ul class="nav flex-column text-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-drawer">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </main>
             <!--Header-->
             <main class="container">
                 <div class="main-wrapper" data-aos="fade-up">
@@ -49,7 +54,7 @@
                                 </div>
                                 <div class="col-lg-6 offset-lg-0" data-aos="fade-up" data-aos-delay="400">
                                     <div class="text-center text-lg-start mt-5 mt-lg-0">
-                                        <div class="fs-3 fw-light text-muted">Welcome to my portfolio! I am</div>
+                                        <div class="fs-3 fw-light text-muted">Welcome! I am</div>
                                         <h1 class="display-3 fw-bolder mb-2">
                                             <span class="text-primary d-inline">Ella Joyce Virayo</span>
                                         </h1>
@@ -58,7 +63,7 @@
                                         </div>
                                         <p class="fs-4 text-muted mb-3">Feel free to browse through my mapping projects and affiliations!</p>
                                         <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#gallery">My  Maps</a>
+                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#portfolio">My  Works</a>
                                             <a class="btn btn-dark btn-lg px-5 py-3" href="#experience">Experience</a>
                                         </div>
                                     </div>
@@ -66,8 +71,11 @@
                             </div>
                         </div>
                     </header>
+
+
+
                     <!--About me-->
-                    <section class="py-5 px-7 overflow-hidden" style="background-color:#fff;">
+                    <section class="py-5 px-7 overflow-hidden bg-light">
                         <div class="container px-5">
                             <div class="row gx-5 align-items-center justify-content-center">
                                 <div class="col-md-2 text-md-end" data-aos="fade-right">
@@ -87,8 +95,11 @@
                             </div>
                         </div>
                     </section>
+
+
+
                     <!--Experiences-->
-                    <section id="experience" class="bg-light py-5">
+                    <section id="experience" class="bg-white py-5">
                         <div class="container px-5">
                             
                             <div class="text-center mb-5" data-aos="fade-up">
@@ -182,107 +193,60 @@
                             </div>
                         </div>
                     </section>
-                    <section id="gallery" class="py-5">
-                        <div class="container px-5 mb-5">
+                    <section id="portfolio" class="py-5 bg-light">
+                        <div class="container px-5">
                             <div class="text-center mb-5" data-aos="fade-up">
-                                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Map Gallery</span></h1>
+                                <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">Portfolio</span></h2>
+                                <p class="text-muted">Click on each tile to check out my projects!</p>
                             </div>
-                            <div id="gallery-loader">
-                                <div class="orbit-system">
-                                    <div class="planet"></div>
-                                    <div class="satellite-orbit"></div>
-                                </div>
-                                <div class="loading-text">Loading map gallery...</div>
-                            </div>
-                            <div id="actual-gallery" style="display: none;">
-                                <div class="row gx-4 justify-content-center">
-                                    <div class="col-lg-10 col-xl-9">
-                                        <div class="row gx-4">
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/lightning_dens.gif" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                                    <div class="ratio ratio-1x1">
-                                                                        <img src="assets/lightning_dens.gif" class="card-img-top object-fit-cover" alt="Lightning Density Map">
-                                                                    </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">Mean Monthly Lightning Density Map of the Philippines (2010-2023)</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/sanjuan.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                            <div class="ratio ratio-1x1">
-                                                                <img src="assets/sanjuan_thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
-                                                            </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">LAHARZ modeled runout vs. actual lahars in Arayat</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/masbate_locmap.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                            <div class="ratio ratio-1x1">
-                                                                <img src="assets/masbate_locmap_thumb.png" class="card-img-top object-fit-cover" alt="Map 3">
-                                                            </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">Location Map of Masbate Province</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/arayat_map.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                            <div class="ratio ratio-1x1">
-                                                                <img src="assets/arayat_thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
-                                                            </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">Location Map of Mount Arayat, Philippines</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/project_poster.pdf" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                            <div class="ratio ratio-1x1">
-                                                                <img src="assets/poster_thumb.gif" class="card-img-top object-fit-cover" alt="Map 2">
-                                                            </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">Leapfrog Geo Modeling of Wadati-Benioff Zone using Earthquake Hypocenters</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                                    <div class="card border-0 bg-transparent h-100">
-                                                        <a href="assets/ticao_map.png" class="glightbox thumbnail-frame" data-gallery="gallery1">
-                                                            <div class="ratio ratio-1x1">
-                                                                <img src="assets/ticao_thumb.png" class="card-img-top object-fit-cover" alt="Map 2">
-                                                            </div>
-                                                        </a>
-                                                        <div class="card-body px-0 text-center">
-                                                            <p class="small fw-bold text-muted mb-0">Geologic Map of Ticao, Masbate Province</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="creative.html" class="text-decoration-none text-dark">
+                                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                                            <img class="card-img-top" src="assets/creative.jpg" alt="Creative Works" style="height: 200px; object-fit: cover;">
+                                            <div class="card-body text-center p-4">
+                                                <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-palette"></i></div>
+                                                <h3 class="h5 fw-bolder">Creative Work</h3>
+                                                <p class="card-text small text-muted">Graphic design, project branding, and artworks</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="maps.html" class="text-decoration-none text-dark">
+                                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                                            <img class="card-img-top" src="assets/lightning_dens.gif" alt="Maps Category" style="height: 200px; object-fit: cover;">
+                                            <div class="card-body text-center p-4">
+                                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-map"></i></div>
+                                                <h3 class="h5 fw-bolder">Maps and Spatial Analyses</h3>
+                                                <p class="card-text small text-muted">Modeling, analysis, and visualization of spatial data using GIS and Python</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                    <a href="volunteer.html" class="text-decoration-none text-dark">
+                                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                                            <img class="card-img-top" src="assets/volunteer.jpg" alt="Volunteer Projects" style="height: 200px; object-fit: cover;">
+                                            <div class="card-body text-center p-4">
+                                                <div class="feature bg-gradient text-white rounded-3 mb-3" 
+                                                    style="width:50px; height:50px; display:inline-flex; align-items:center; justify-content:center; background-color: #86A67C;">
+                                                    <i class="bi bi-heart"></i>
+                                                </div>
+                                                <h3 class="h5 fw-bolder">Volunteer Work</h3>
+                                                <p class="card-text small text-muted">Environmental and academic outreach initiatives</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
                     </section>
                     <!--My life in a map-->
-                    <section class="py-5">
+                    <section class="py-5 px-5 bg-white">
                         <div class="container px-5">
                             <div class="row gx-5 align-items-center">
                                 <div class="col-lg-6" data-aos="zoom-in">
@@ -299,21 +263,14 @@
                 </div>
             </main>
 
-                <footer class="bg-white py-4 mt-auto">
-                    <div class="container px-5">
-                        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                            <div class="col-auto"><div class="small m-0">Copyright &copy; Ella Joyce Virayo</div></div>
-                            <div class="col-auto">
-                                <a class="small" href="#!">Privacy</a>
-                                <span class="mx-1">&middot;</span>
-                                <a class="small" href="#!">Terms</a>
-                                <span class="mx-1">&middot;</span>
-                                <a class="small" href="#!">Contact</a>
-                            </div>
-                        </div>
-                    </div>
+        <footer class="py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white fw-light"> &copy; 2026 Ella Joyce Virayo </div></div>
+                </div>
             </div>
         </footer>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

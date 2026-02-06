@@ -11992,3 +11992,142 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     max-width: 2000px;
 }
 
+
+
+
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1) !important;
+}
+
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Sidebar Container */
+.side-nav {
+    position: fixed;
+    left: 20px; /* Distance from left edge */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    width: 70px;
+    height: auto; /* Shrinks to fit items */
+    background: #ffffff;
+    border-radius: 50px; /* Makes it a rounded rectangle */
+    z-index: 1050;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* 1. Sidebar Container */
+.side-nav {
+    position: fixed;
+    left: 25px; /* Spacing from left edge */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the rectangle vertically */
+    width: 140px; /* Adjusted to fit your text links */
+    background-color: #ffffff;
+    border-radius: 40px; /* Creates the rounded rectangle shape */
+    z-index: 1050;
+    border: 1px solid rgba(0,0,0,0.05);
+    height: auto;
+    padding: 20px 0;
+}
+
+/* 2. Nav Link Styling (matching your original navbar) */
+.side-nav .nav-link {
+    font-family: "SN Pro", sans-serif;
+    font-size: 1rem; /* Standard Bootstrap font size */
+    font-weight: 500;
+    color: #212529; /* Dark text like your old nav */
+    padding: 10px 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.side-nav .nav-link:hover {
+    color: #64a5b1; /* Your teal theme color */
+}
+
+/* 3. Main Content Shift */
+.main-content-wrapper {
+    margin-left: 180px; /* Sidebar width (140px) + 40px gap */
+    transition: margin-left 0.3s ease;
+    padding-right: 40px; /* Optional: adds balance to the right side */
+}
+
+/* 4. Responsive Fix */
+@media (max-width: 991.98px) {
+    /* Resets the layout for mobile phones/tablets */
+    .main-content-wrapper {
+        margin-left: 0;
+        padding-right: 0;
+    }
+    /* Note: On mobile, you should keep your original top navbar 
+       using Bootstrap's .d-lg-none class so users can still navigate. */
+}
+
+section[id] {
+    scroll-margin-top: 200px;
+}
+
+/* Custom Software Badges */
+.software-badge {
+    font-size: 0.65rem;
+    padding: 0.3em 0.7em;
+    background-color: #f8f9fa;
+    border: 1px solid #fff;
+    color: #6c757d;
+    border-radius: 50rem;
+    display: inline-block;
+    margin: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Adjusting the existing dashed-box for gallery use */
+.gallery-item.dashed-box {
+    padding: 1.5rem; /* Slightly less padding than experience boxes */
+    transition: all 0.3s ease;
+    border-color: #cbd5e0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item.dashed-box:hover {
+    border-color: #7d658d; /* Highlights with your primary color on hover */
+    transform: translateY(-5px);
+}
+
+/* Widens the container specifically for the gallery page */
+#gallery .container {
+    max-width: 1400px; /* Increases from default Bootstrap width */
+}
+
+/* Adjusting the dashed-box to maximize map size */
+.gallery-item.dashed-box {
+    padding: 1rem; /* Reduced from 1.5rem to give the image more space */
+    transition: all 0.3s ease;
+    border-color: #cbd5e0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the image container doesn't have extra margins */
+.thumbnail-frame {
+    margin-bottom: 0.75rem !important; 
+}
