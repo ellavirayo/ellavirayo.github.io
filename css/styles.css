@@ -12131,3 +12131,117 @@ section[id] {
 .thumbnail-frame {
     margin-bottom: 0.75rem !important; 
 }
+
+/* Ensure the dashed box stretches well for horizontal content */
+.volunteer-section .dashed-box {
+    border: 2px dashed #cbd5e0;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+
+.volunteer-section .dashed-box:hover {
+    border-color: #554063;
+    transform: scale(1.01);
+}
+
+/* Fix for small screens to center the image */
+@media (max-width: 767.98px) {
+    .volunteer-section .text-center-mobile {
+        text-align: center !important;
+    }
+}
+
+/* Unique wrapper for the Volunteer page with plenty of white space */
+.volunteer-wrapper {
+    margin-left: 20px; /* Space for your side-nav */
+    padding: 60px 60px; /* Top/Bottom and Left/Right white space */
+    background-color: #f8f9fa; /* Light background to make the white boxes pop */
+    min-height: 100vh;
+}
+
+/* Internal padding for the dashed boxes */
+.volunteer-card {
+    background-color: #ffffff;
+    border: 0.4px dashed #cbd5e0;
+    border-radius: 20px;
+    padding: 30\px;
+    margin-bottom: 30px; /* Space between the dashed boxes */
+    transition: border-color 0.3s ease;
+}
+
+.volunteer-card:hover {
+    border-color: #554063;
+}
+
+/* Ensure carousel images look consistent */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Make indicators circular and change color */
+.carousel-indicators [button] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #554063; /* Your badge color */
+    opacity: 0.5;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #64a5b1; /* Your teal accent color */
+}
+
+/* Gallery Hover Effect */
+.art-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.art-overlay {
+    position: absolute;
+    bottom: -100%; /* Hidden by default */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 64, 99, 0.85); /* Your theme purple with transparency */
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.art-container:hover .art-overlay {
+    bottom: -75%; /* Slide up on hover */
+}
+
+/* Filter Button Styling */
+.filter-button-group .btn {
+    border-radius: 50rem;
+    padding: 0.4rem 1.5rem;
+    font-weight: 500;
+}
+
+.filter-button-group .btn.active {
+    background-color: #554063;
+    border-color: #554063;
+    color: white;
+}
+/* Normal state of the link */
+.side-nav .nav-link {
+    transition: all 0.3s ease;
+    color: var(--bs-gray-800); /* Muted gray */
+}
+
+/* "Light up" state when active */
+.side-nav .nav-link.active {
+    color: #64a5b1 !important; /* Your theme purple */
+    font-weight: 700;
+    transform: scale(1.1); /* Slight pop effect */
+}
