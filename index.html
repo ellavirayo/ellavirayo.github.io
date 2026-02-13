@@ -19,7 +19,6 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>
     <body class="d-flex flex-column h-100" data-bs-spy="scroll" data-bs-target=".side-nav" data-bs-offset="50">
-        <main class="flex-shrink-0">
         <nav class="side-nav d-none d-lg-block shadow">
             <div class="d-flex flex-column justify-content-center h-100 p-3">
                 <ul class="nav flex-column text-center gap-3">
@@ -27,10 +26,10 @@
                         <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-drawer">Connect</a>
@@ -38,7 +37,7 @@
                 </ul>
             </div>
         </nav>
-        </main>
+
             <!--Header-->
             <main class="container">
                 <div class="main-wrapper" >
@@ -48,19 +47,7 @@
                                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                                     <div class="d-flex justify-content-center">
                                         <div class="profile-container">
-                                            <div id="profileCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active" data-bs-interval="3000">
-                                                        <img src="assets/ejv_profile_1.jpeg" class="profile-img d-block w-100" alt="Profile 1">
-                                                    </div>
-                                                    <div class="carousel-item" data-bs-interval="3000">
-                                                        <img src="assets/ejv_profile_2.png" class="profile-img d-block w-100" alt="Profile 2">
-                                                    </div>
-                                                    <div class="carousel-item" data-bs-interval="3000">
-                                                        <img src="assets/ejv_profile_3.png" class="profile-img d-block w-100" alt="Profile 3">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <img class="profile-img" src="assets/ejv_profile_2.png" alt="Profile Picture" />
                                         </div>
                                     </div>
                                 </div>
@@ -74,10 +61,6 @@
                                             <div class="text-uppercase">Geologist &middot; GIS Specialist</div>
                                         </div>
                                         <p class="fs-4 text-muted mb-3">Feel free to browse through my mapping projects and affiliations!</p>
-                                        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#portfolio">My  Works</a>
-                                            <a class="btn btn-dark btn-lg px-5 py-3" href="#experience">Experience</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -90,12 +73,10 @@
                     <section class="py-5 px-7 overflow-hidden bg-light">
                         <div class="container px-5">
                             <div class="row gx-5 align-items-center justify-content-center">
-                                <div class="col-md-2 text-md-end" data-aos="fade-right">
-                                    <h2 class="display-5 fw-bolder">
+                                <div class="col-md-5 border-start border-4 border-primary ps-md-5" data-aos="fade-up" data-aos-delay="300">
+                                    <h2 class="display-8 fw-bolder">
                                         <span class="text-gradient d-inline">About Me</span>
                                     </h2>
-                                </div>
-                                <div class="col-md-5 border-start border-4 border-primary ps-md-5" data-aos="fade-up" data-aos-delay="300">
                                     <h4 class="fw-bold" style="color: #363636;">I am Ella from Rizal, Philippines.</h4>
                                     <p class="text-muted mb-0">
                                         I specialize in hazard mapping using geographic information systems (GIS) software, particularly ArcGIS, QGIS, ILWIS, Global Mapper, and Leapfrog. I also use Python (Pandas, GeoPandas, Matplotlib, Seaborn) to make maps and visualize data.
@@ -116,18 +97,6 @@
                             </div>
 
                             <div class="row gx-5 justify-content-center">
-                                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                                    <a href="creative.html" class="text-decoration-none text-dark">
-                                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
-                                            <img class="card-img-top" src="assets/creative.jpg" alt="Creative Works" style="height: 200px; object-fit: cover;">
-                                            <div class="card-body text-center p-4">
-                                                <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-palette"></i></div>
-                                                <h3 class="h5 fw-bolder">Creative Work</h3>
-                                                <p class="card-text small text-muted">Digital design for my organizations, and my hobby work!</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
                                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                                     <a href="maps.html" class="text-decoration-none text-dark">
@@ -137,6 +106,19 @@
                                                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-map"></i></div>
                                                 <h3 class="h5 fw-bolder">Maps and Spatial Analyses</h3>
                                                 <p class="card-text small text-muted">Modeling, analysis, and visualization of spatial data using GIS and Python</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="creative.html" class="text-decoration-none text-dark">
+                                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                                            <img class="card-img-top" src="assets/creative.jpg" alt="Creative Works" style="height: 200px; object-fit: cover;">
+                                            <div class="card-body text-center p-4">
+                                                <div class="feature bg-secondary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-palette"></i></div>
+                                                <h3 class="h5 fw-bolder">Creative Work</h3>
+                                                <p class="card-text small text-muted">Digital design for my organizations, and my hobby work!</p>
                                             </div>
                                         </div>
                                     </a>
@@ -284,7 +266,7 @@
                     </section>
                     
                     <!--My life in a map-->
-                    <section class="py-5 px-5 bg-light">
+                    <section class="py-5 px-5 bg-white">
                         <div class="container px-5">
                             <div class="row gx-5 align-items-center">
                                 <div class="col-lg-6" data-aos="zoom-in">
@@ -352,22 +334,13 @@
                 <div class="row">
                     <div class="col-md-5 mb-4">
                         <p class="text-muted small mb-2">EMAIL ADDRESS</p>
-                        <a href="mailto:ella.virayo@email.com" class="text-decoration-none fw-bold" style="color: #64a5b1;">ella.virayo@gmail.com</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ella.virayo@gmail.com" class="text-decoration-none fw-bold" style="color: #64a5b1;">ella.virayo@gmail.com</a>
                         
                         <p class="text-muted small mt-4 mb-2">SOCIALS</p>
                         <div class="d-flex gap-3">
                             <a href="https://www.linkedin.com/in/ellavirayo/" class="fs-4" style="color: #7d658d;"><i class="bi bi-linkedin"></i></a>
                             <a href="https://github.com/ellavirayo" class="fs-4" style="color: #7d658d;"><i class="bi bi-github"></i></a>
                         </div>
-                    </div>
-                    <div class="col-md-7">
-                        <form id="contact-form">
-                            <input type="text" class="form-control mb-2" placeholder="Your Name" required>
-                            <input type="email" class="form-control mb-2" placeholder="Email Address" required>
-                            <textarea class="form-control mb-3" rows="3" placeholder="Message..."></textarea>
-                            <button type="submit" class="btn w-100 text-white" style="background-color: #64a5b1;">Send Message</button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>

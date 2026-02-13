@@ -11945,8 +11945,8 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(100%);
     width: 90%;
-    max-width: 600px;
-    background: white;
+    max-width: 300px;
+    background: var(--bs-light);
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
     z-index: 2000;
@@ -11993,8 +11993,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-
-
 .hover-shadow {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -12017,72 +12015,50 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 1.5rem;
 }
 
-/* Sidebar Container */
+/* ------------------------------- SIDE BAR ------------------------------- */
 .side-nav {
     position: fixed;
-    left: 20px; /* Distance from left edge */
+    left: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centers it vertically */
-    width: 70px;
-    height: auto; /* Shrinks to fit items */
-    background: #ffffff;
-    border-radius: 50px; /* Makes it a rounded rectangle */
-    z-index: 1050;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-/* 1. Sidebar Container */
-.side-nav {
-    position: fixed;
-    left: 25px; /* Spacing from left edge */
-    top: 50%;
-    transform: translateY(-50%); /* Centers the rectangle vertically */
-    width: 140px; /* Adjusted to fit your text links */
+    transform: translateY(-50%);
+    width: 100px; 
     background-color: #ffffff;
-    border-radius: 40px; /* Creates the rounded rectangle shape */
+    border-radius: 30px; 
     z-index: 1050;
     border: 1px solid rgba(0,0,0,0.05);
     height: auto;
-    padding: 20px 0;
+    padding: 15px 0; 
 }
 
-/* 2. Nav Link Styling (matching your original navbar) */
 .side-nav .nav-link {
-    font-family: "SN Pro", sans-serif;
-    font-size: 1rem; /* Standard Bootstrap font size */
-    font-weight: 500;
-    color: #212529; /* Dark text like your old nav */
-    padding: 10px 15px;
-    transition: color 0.2s ease-in-out;
+    font-size: 0.75rem; 
+    padding: 8px 5px; 
+    text-align: center;
 }
 
 .side-nav .nav-link:hover {
-    color: #64a5b1; /* Your teal theme color */
+    color: #64a5b1; 
 }
 
-/* 3. Main Content Shift */
 .main-content-wrapper {
-    margin-left: 180px; /* Sidebar width (140px) + 40px gap */
+    margin-left: 180px;
     transition: margin-left 0.3s ease;
-    padding-right: 40px; /* Optional: adds balance to the right side */
+    padding-right: 40px;
 }
 
-/* 4. Responsive Fix */
 @media (max-width: 991.98px) {
-    /* Resets the layout for mobile phones/tablets */
     .main-content-wrapper {
         margin-left: 0;
         padding-right: 0;
     }
-    /* Note: On mobile, you should keep your original top navbar 
-       using Bootstrap's .d-lg-none class so users can still navigate. */
+
 }
 
 section[id] {
     scroll-margin-top: 200px;
 }
 
-/* Custom Software Badges */
+/* ------------------------------- MAP GALLERY  ------------------------------- */
 .software-badge {
     font-size: 0.65rem;
     padding: 0.3em 0.7em;
@@ -12097,9 +12073,8 @@ section[id] {
     letter-spacing: 0.05em;
 }
 
-/* Adjusting the existing dashed-box for gallery use */
 .gallery-item.dashed-box {
-    padding: 1.5rem; /* Slightly less padding than experience boxes */
+    padding: 1.5rem; 
     transition: all 0.3s ease;
     border-color: #cbd5e0;
     height: 100%;
@@ -12108,18 +12083,18 @@ section[id] {
 }
 
 .gallery-item.dashed-box:hover {
-    border-color: #7d658d; /* Highlights with your primary color on hover */
+    border-color: #7d658d; 
     transform: translateY(-5px);
 }
 
-/* Widens the container specifically for the gallery page */
+
 #gallery .container {
-    max-width: 1400px; /* Increases from default Bootstrap width */
+    max-width: 1400px; 
 }
 
-/* Adjusting the dashed-box to maximize map size */
+
 .gallery-item.dashed-box {
-    padding: 1rem; /* Reduced from 1.5rem to give the image more space */
+    padding: 1rem; 
     transition: all 0.3s ease;
     border-color: #cbd5e0;
     height: 100%;
@@ -12127,12 +12102,10 @@ section[id] {
     flex-direction: column;
 }
 
-/* Ensure the image container doesn't have extra margins */
 .thumbnail-frame {
     margin-bottom: 0.75rem !important; 
 }
 
-/* Ensure the dashed box stretches well for horizontal content */
 .volunteer-section .dashed-box {
     border: 2px dashed #cbd5e0;
     border-radius: 20px;
@@ -12144,28 +12117,26 @@ section[id] {
     transform: scale(1.01);
 }
 
-/* Fix for small screens to center the image */
 @media (max-width: 767.98px) {
     .volunteer-section .text-center-mobile {
         text-align: center !important;
     }
 }
 
-/* Unique wrapper for the Volunteer page with plenty of white space */
+/* ------------------------------- VOLUNTEERING ------------------------------- */
 .volunteer-wrapper {
-    margin-left: 20px; /* Space for your side-nav */
-    padding: 60px 60px; /* Top/Bottom and Left/Right white space */
-    background-color: #f8f9fa; /* Light background to make the white boxes pop */
+    margin-left: 20px; 
+    padding: 60px 60px; 
+    background-color: #f8f9fa; 
     min-height: 100vh;
 }
 
-/* Internal padding for the dashed boxes */
 .volunteer-card {
     background-color: #ffffff;
     border: 0.4px dashed #cbd5e0;
     border-radius: 20px;
     padding: 30\px;
-    margin-bottom: 30px; /* Space between the dashed boxes */
+    margin-bottom: 30px; 
     transition: border-color 0.3s ease;
 }
 
@@ -12173,19 +12144,17 @@ section[id] {
     border-color: #554063;
 }
 
-/* Ensure carousel images look consistent */
 .carousel-item img {
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-/* Make indicators circular and change color */
 .carousel-indicators [button] {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #554063; /* Your badge color */
+    background-color: #554063; 
     opacity: 0.5;
     border: none;
     margin: 0 5px;
@@ -12193,10 +12162,12 @@ section[id] {
 
 .carousel-indicators .active {
     opacity: 1;
-    background-color: #64a5b1; /* Your teal accent color */
+    background-color: #64a5b1; 
 }
 
-/* Gallery Hover Effect */
+
+
+/* ------------------------------- CREATIVE WORKS ------------------------------- */
 .art-container {
     position: relative;
     overflow: hidden;
@@ -12206,11 +12177,11 @@ section[id] {
 
 .art-overlay {
     position: absolute;
-    bottom: -100%; /* Hidden by default */
+    bottom: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(85, 64, 99, 0.85); /* Your theme purple with transparency */
+    background: rgba(85, 64, 99, 0.85);
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
@@ -12218,10 +12189,9 @@ section[id] {
 }
 
 .art-container:hover .art-overlay {
-    bottom: 0; /* Slide up on hover */
+    bottom: 0; 
 }
 
-/* Filter Button Styling */
 .filter-button-group .btn {
     border-radius: 50rem;
     padding: 0.4rem 1.5rem;
@@ -12233,15 +12203,101 @@ section[id] {
     border-color: #554063;
     color: white;
 }
-/* Normal state of the link */
 .side-nav .nav-link {
     transition: all 0.3s ease;
-    color: var(--bs-gray-800); /* Muted gray */
+    color: var(--bs-gray-800); 
 }
 
-/* "Light up" state when active */
 .side-nav .nav-link.active {
-    color: #64a5b1 !important; /* Your theme purple */
+    color: #64a5b1 !important;
     font-weight: 700;
-    transform: scale(1.1); /* Slight pop effect */
+    transform: scale(1.1);
+}
+
+
+/* ------------------------------- MOBILE INTERFACE ------------------------------- */
+@media (max-width: 768px) {
+    .timeline:before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .timeline-date {
+        width: auto;   
+        text-align: left;   
+        padding-right: 0;    
+        margin-bottom: 10px; 
+        display: block;
+    }
+
+    .timeline-content {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+}
+
+.grid-item {
+    float: left;
+    margin-bottom: 10px; 
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+    .volunteer-card {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .volunteer-card .col-md-7, 
+    .volunteer-card .ps-md-5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .volunteer-card .d-flex.justify-content-between {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-body.p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .h5.fw-bolder {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px; 
+        object-fit: cover;
+    }
+    
+    .volunteer-card {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
 }
