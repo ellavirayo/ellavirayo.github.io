@@ -11604,36 +11604,31 @@ html {
 /* ------------------------------- HEADER ------------------------------- */
 /* circular profile picture */
 .profile-container {
-    position: relative;
-    height: 30rem; 
-    width: 30rem;  
+    width: 300px;         
+    height: 300px;
+    background-color: #fff; 
+    border-radius: 50%; 
+    padding: 10px;          
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); 
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+    overflow: hidden;  
+    margin: 0 auto;
+}
+
+#profileCarousel, .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%; 
-    border: 5px solid #ffffff; 
-    box-shadow: 0 10px 20px 2px rgba(125, 101, 141, 0.3);
+    object-fit: cover;   
+    border-radius: 50%;
 }
-
-.profile {
-    background-color: transparent !important; /* fallback */
-}
-
-.profile-img {
-    position: relative;
-    z-index: 10;
-    display: block !important;
-    max-width: 100%;
-    height: auto;
-}
-
 /* other header items - alignment, mobile compatibility */
 @media (min-width: 992px) {
     header .row.gx-5 {
@@ -11641,6 +11636,11 @@ html {
         align-items: center !important;
         flex-wrap: nowrap !important;
     }
+}
+
+header.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
 }
 
 .profile-container {
